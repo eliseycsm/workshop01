@@ -4,9 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
   },
   "author": "",
+  "engines": {
+    "node": "15.x"
+  },
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
