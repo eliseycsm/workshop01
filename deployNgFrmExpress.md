@@ -6,3 +6,4 @@
     -copy paste the dist/frontend folder over
     -go back to express and serve it 
         -app.use(express.static(__dirname + '/frontend'))
+** do not check frontend folder into express' git as it is an artefact
