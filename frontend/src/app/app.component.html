@@ -1,0 +1,41 @@
+<div class="main">
+
+  <!-- <div class="container">
+    <form action="/api/cookie" method="get">
+      <label for="count">Select number of cookies you want</label>
+      <select name="count" id="count">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary">Get cookies!</button>
+    </form>
+  </div> -->
+
+  <h1>Fortune cookies</h1>
+  <form [formGroup]='form' (ngSubmit)="getCookie()">
+    <label for="count">Select number of cookies you want</label>
+        <select name="count" id="count" formControlName="cookieCount"
+        style="margin-right: 2vw; margin-left: 1vw;">
+          <option value="1" checked>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">Get cookies!</button>
+  </form>
+
+  <div class="results">
+    <div *ngFor="let text of cookies">
+      {{text.cookie}}
+    </div>
+
+  </div>
+
+</div>
+

@@ -1,0 +1,14 @@
+.results {
+    border: 1px grey solid;
+    margin: 1em;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
